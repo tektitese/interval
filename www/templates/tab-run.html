@@ -1,0 +1,27 @@
+<ion-view class="pane" hide-nav-bar="true">
+  <ion-content>
+    <ion-list ng-if="!active">
+      <ion-item class="item-checkbox">
+        <label class="checkbox">
+          <input type="checkbox" ng-model="workout.autostart">
+        </label>
+        Autostart after rest
+      </ion-item>
+      <ion-item class="item-checkbox">
+        <label class="checkbox">
+          <input type="checkbox"  ng-model="workout.skipwarmup">
+        </label>
+        Skip warmup
+      </ion-item>
+    </ion-list>
+    <button class="button button-full button-royal" ng-click="start()" ng-if="!active">
+      Start it up!
+    </button>
+    <div ng-if="active">
+      Hej
+      <p ng-bind="counter"></p>
+    </div>
+    <pre>{{workout}}</pre>
+    <pre>{{settings}}</pre>
+  </ion-content>
+</ion-view>

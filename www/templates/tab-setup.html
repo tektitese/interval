@@ -1,0 +1,23 @@
+<ion-view class="pane" hide-nav-bar="true">
+  <ion-content class="">
+    <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Warmup</span>
+        <input ng-model="settings.warmup" ng-change="update('warmup', settings.warmup)" type="tel" placeholder="Warmup (minutes)">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Rest time</span>
+        <input ng-model="settings.rest" ng-change="update('rest', settings.rest)" type="tel" placeholder="Rest time (minutes)">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Run time</span>
+        <input ng-model="settings.run" ng-change="update('run', settings.run)" type="tel" placeholder="Run time (minutes)">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Iterations</span>
+        <input ng-model="settings.iterations" ng-change="update('iterations', settings.iterations)" type="tel" placeholder="Iterations">
+      </label>
+      <p>Time is in minutes</p>
+    </div>
+  </ion-content>
+</ion-view>
